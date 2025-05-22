@@ -54,7 +54,7 @@ input#tab1:checked~.tabs-header .tabs-selector label[for="tab1"], input#tab2:che
 /**/
 
 /**/
-input#tab1:checked~.video-feedback, input#tab2:checked~.text-feedback, input#tab3:checked~.image-feedback {
+input#tab1:checked~.mostra1, input#tab2:checked~.mostra2, input#tab3:checked~.mostra3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
