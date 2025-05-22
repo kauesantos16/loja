@@ -41,7 +41,6 @@ input[name="tabs"] {
 
 /**/
 input#tab1:checked~.tabs-header .tabs-selector label[for="tab1"], input#tab2:checked~.tabs-header .tabs-selector label[for="tab2"], input#tab3:checked~.tabs-header .tabs-selector label[for="tab3"] {
-	background-color: var(--button-background);
 	color: white;
 }
 
