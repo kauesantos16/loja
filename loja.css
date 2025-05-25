@@ -1,3 +1,129 @@
+/* SECTION DE IMAGEM OU VÍDEO MAIS TEXTO */
+
+.ds-section-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ds-div-img {
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* mantém proporção 1:1 */
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ds-div-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ds-div-text > div {
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .ds-section-01 {
+    grid-template-columns: 1fr;
+  }
+
+.ds-div-text {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+  /* Padrão: imagem em cima */
+  .ds-section-01 .ds-div-img {
+    order: 1;
+  }
+
+  .ds-section-01 .ds-div-text {
+    order: 2;
+    text-align: center;
+  }
+
+  /* Invertido: texto em cima */
+  .ds-section-01.invert-mobile .ds-div-img {
+    order: 2;
+  }
+
+  .ds-section-01.invert-mobile .ds-div-text {
+    order: 1;
+  }
+}
+
+/* SECTION DE FAQ */
+
+.faq-section {
+  padding: 24px 0;
+}
+
+.faq-section h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.faq {
+	margin-bottom: 0;
+}
+
+.faq summary {
+	cursor: pointer;
+	list-style: none;
+	padding: 12px 0;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: inherit;
+	border-bottom: 1px solid rgba(0, 0, 0, .4);
+	text-align: left;
+	background: none;
+	gap: 12px;
+}
+
+.faq summary::after {
+	content: "+";
+	font-size: 16px;
+	transition: transform .3s ease;
+}
+
+.faq[open] summary::after {
+	content: "−";
+}
+
+.faq div {
+	padding: 20px 0;
+	font-size: 14px;
+	color: inherit;
+	text-align: left;
+}
+
+/* SECTION DE REVIEW */
+
 .tabs-container {
 	margin: auto;
 }
