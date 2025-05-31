@@ -85,6 +85,13 @@
   margin-bottom: 1.5rem;
 }
 
+.faq p {
+  padding: 12px 0;
+  font-size: 14px;
+  color: inherit;
+  text-align: left;
+}
+
 .faq {
 	margin-bottom: 0;
 }
