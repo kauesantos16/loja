@@ -131,6 +131,11 @@
 
 /* SECTION DE IMG FULL */
 
+.img-full-container.com-padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .img-full-desktop {
       display: block;
     }
